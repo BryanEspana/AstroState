@@ -18,6 +18,7 @@ class user extends StatelessWidget {
 }
 
 class userApp extends StatelessWidget {
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,35 +26,47 @@ class userApp extends StatelessWidget {
         items: const <BottomNavigationBarItem>[
           //PLANTAS
           BottomNavigationBarItem(
-            icon: Icon(Icons.filter_vintage),
+            icon: Icon(
+              Icons.filter_vintage,
+              color: Colors.black,
+            ),
             label: '',
             backgroundColor: Color(0xFFFFD233),
           ),
 
           //EXTREMORFILOS
           BottomNavigationBarItem(
-            icon: Icon(Icons.coronavirus),
+            icon: Icon(
+              Icons.coronavirus,
+              color: Colors.black,
+            ),
             label: '',
             backgroundColor: Color(0xFFFFD233),
           ),
 
           //LISTA DE ACTIVIDADES
           BottomNavigationBarItem(
-            icon: Icon(Icons.list_alt),
+            icon: Icon(
+              Icons.list_alt,
+              color: Colors.black,
+            ),
             label: "hola",
             backgroundColor: Color(0xFFFFD233),
           ),
 
           //QUESTIONS
           BottomNavigationBarItem(
-            icon: Icon(Icons.question_mark_sharp),
+            icon: Icon(
+              Icons.question_mark_sharp,
+              color: Colors.black,
+            ),
             label: '',
             backgroundColor: Color(0xFFFFD233),
           ),
 
           //USUARIO
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.account_circle, color: Colors.black,),
             label: '',
             backgroundColor: Color(0xFFFFD233),
           ),
@@ -188,7 +201,7 @@ class userApp extends StatelessWidget {
                     Padding(padding: EdgeInsets.only(bottom: 20))
                   ],
                 ),
-              ))
+              )),
         ],
       ),
     );

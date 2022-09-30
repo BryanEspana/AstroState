@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uvgspace/user.dart';
+import 'package:uvgspace/quest.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
           Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 350, right: 15, left: 15),
+                padding: EdgeInsets.only(top: 360, right: 15, left: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Username",
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => user()),
+                        MaterialPageRoute(builder: (context) => quest()),
                       );
                     },
                     child: Text("Login")),
