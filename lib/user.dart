@@ -195,7 +195,7 @@ class userApp extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(top: 25, right: 80),
                             child: Text(
-                              "Neuronal State",
+                              "Physical State",
                               style: TextStyle(fontSize: 22),
                             ),
                           ),
