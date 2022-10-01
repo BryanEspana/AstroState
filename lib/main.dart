@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uvgspace/quest.dart';
+import 'package:uvgspace/user.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/fondo.png"),
+          image: AssetImage("images/astrostate.png"),
           fit: BoxFit.cover,
         ),
       ),
@@ -37,17 +37,17 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.only(top: 360, right: 15, left: 15),
                 child: TextField(
                   decoration: InputDecoration(
-                    labelText: "Username",
-                    labelStyle: TextStyle(color: Colors.white),
-                    fillColor: Colors.white,
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          const BorderSide(color: Colors.white, width: 2.0),
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    border: OutlineInputBorder(),
-                    hintText: 'Username',
-                  ),
+                      labelText: "Username",
+                      labelStyle: TextStyle(color: Colors.white),
+                      fillColor: Colors.white,
+                      enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            const BorderSide(color: Colors.white, width: 2.0),
+                        borderRadius: BorderRadius.circular(20.0),
+                      ),
+                      border: OutlineInputBorder(),
+                      hintText: 'Username',
+                      hintStyle: TextStyle(color: Colors.white)),
                 ),
               ),
               Padding(
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => quest()),
+                        MaterialPageRoute(builder: (context) => user()),
                       );
                     },
                     child: Text("Login")),

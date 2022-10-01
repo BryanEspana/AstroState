@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uvgspace/activities.dart';
 
 class quest extends StatelessWidget {
   bool value = false;
@@ -449,15 +450,27 @@ class quest extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-                TextButton(
-                    style: TextButton.styleFrom(
-                      backgroundColor: Color(0xFFFFD233),
-                      primary: Colors.black,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                    ),
-                    onPressed: () {},
-                    child: Text("Send"))
+                Container(
+                  color: Colors.white,
+                  child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10, left: 20, right: 20, bottom: 5),
+                      child: TextButton(
+                          style: TextButton.styleFrom(
+                            backgroundColor: Color(0xFFFFD233),
+                            primary: Colors.black,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => activities()),
+                            );
+                          },
+                          child: Text("Send"))),
+                ),
               ],
             )));
   }

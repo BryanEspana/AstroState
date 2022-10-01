@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uvgspace/quest.dart';
 
 class user extends StatelessWidget {
   @override
@@ -66,7 +67,10 @@ class userApp extends StatelessWidget {
 
           //USUARIO
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle, color: Colors.black,),
+            icon: Icon(
+              Icons.account_circle,
+              color: Colors.black,
+            ),
             label: '',
             backgroundColor: Color(0xFFFFD233),
           ),
@@ -198,7 +202,28 @@ class userApp extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(bottom: 20))
+                    Padding(padding: EdgeInsets.only(bottom: 20)),
+                    Container(
+                      child: Padding(
+                          padding: EdgeInsets.only(
+                              top: 10, left: 20, right: 20, bottom: 5),
+                          child: TextButton(
+                              style: TextButton.styleFrom(
+                                backgroundColor: Color(0xFFFFD233),
+                                primary: Colors.black,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10)),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => quest()),
+                                );
+                              },
+                              child: Text(
+                                  "Perform the daily quest to update your results"))),
+                    ),
                   ],
                 ),
               )),
