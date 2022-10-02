@@ -1,4 +1,4 @@
-# UVGspace Prototipe
+# Astro State Prototype
 ![6](https://user-images.githubusercontent.com/83832357/193466064-ddafe4c4-fb19-4b5e-a673-641c13ef9a5f.png)
 
 ![7](https://user-images.githubusercontent.com/83832357/193466077-9f76e17f-07f5-4776-b77a-681697856127.png)
